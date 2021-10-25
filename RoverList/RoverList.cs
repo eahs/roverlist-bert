@@ -9,10 +9,11 @@ namespace RoverList
     public class RoverList<T> : RoverListBase<T>
     {
         // Add any variables you need here
+        public int counter;
         
         public RoverList ()
         {
-
+            counter = 0;
         }
 
         public override int Count => throw new NotImplementedException();
