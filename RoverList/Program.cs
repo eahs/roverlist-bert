@@ -72,11 +72,22 @@ namespace RoverList
             list.ListNodes();
 
             // TODO:  Remove every word with an odd length
+            for(int i=0; i<list.Count; i+=2)
+            {
+                if (list.ElementAt(i).Length % 2 != 0)
+                {
+                    list.RemoveAt(i);
+                }
+            }
+            
             // TODO:  Print out the list
-
+            list.ListNodes();
+            
             // TODO:  Clear the list
+            list.Clear();
+            
             // TODO:  Print out the list
-
+            list.ListNodes();
 
         }
     }
