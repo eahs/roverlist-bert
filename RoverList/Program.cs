@@ -53,7 +53,23 @@ namespace RoverList
             }
             
             // TODO:  Prompt the user to input words, add those words to the FRONT of the list until they enter the word "done"
+            Console.WriteLine("Enter a word to be added to the FRONT of the list. Enter 'done' when complete.");
+            
             // TODO:  Print out the list
+            input = "";
+            while (input != "done")
+            {
+                if (input == "done")
+                {
+                    break;
+                }
+                else
+                {
+                    list.Add(0, input);
+                    input = Console.ReadLine();
+                }
+            }
+            list.ListNodes();
 
             // TODO:  Remove every word with an odd length
             // TODO:  Print out the list
